@@ -136,6 +136,25 @@ public class Block{
     return item;
   }
 
+  /**
+   * 获取格子内容
+   * @param name 格子名称
+   * @return 内容
+   */
+  public String getItemContent(String name){
+    return getItemByName(name).getContent();
+  }
+
+  /**
+   * 通过在块中的位置获取格子内容
+   * @param row 行，从0开始计
+   * @param col 列，从0开始计
+   * @return 内容
+   */
+  public String getItemContent(int row,int col){
+    return getItemByGrid(row,col).getContent();
+  }
+
   public String toString(){
     StringBuilder s = new StringBuilder();
     s.append("block ");
