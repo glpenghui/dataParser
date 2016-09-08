@@ -30,15 +30,15 @@ public class MostSimpleSample{
 
     Block block = null;
     while(null!=(block = parser.nextBlock())){
-      System.out.print(block.getItemByName("A").getContent());
+      System.out.print(block.getItemContent("A"));
       System.out.print("\t");
-      System.out.print(block.getItemByName("B").getContent());
+      System.out.print(block.getItemContent("B"));
       System.out.print("\t");
-      System.out.print(block.getItemByName("C").getContent());
+      System.out.print(block.getItemContent("C"));
       System.out.print("\t");
-      System.out.print(block.getItemByName("D").getContent());
+      System.out.print(block.getItemContent("D"));
       System.out.print("\t");
-      System.out.println(block.getItemByName("E").getContent());
+      System.out.println(block.getItemContent("E"));
       System.out.println("_____________________________________");
     }
   }
