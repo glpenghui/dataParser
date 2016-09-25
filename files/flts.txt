@@ -1,0 +1,15 @@
+2010093019:00:00CA987  DPEK-SPN                       PEKSPN772       0  YY3163151  15 
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YS0  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  CZ6  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  CD4  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  CR0  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YK0  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YW2  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YH20 0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       32 CC9  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YB9  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YL89 60 0  3  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YQ0  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YV0  0  0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  YG48 41 0  0  
+2010093018:40:00CA995  DPEK-SVX                       PEKSVX330       0  CI0  0  0  0  
