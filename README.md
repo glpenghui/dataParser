@@ -7,6 +7,7 @@
 * files：示例文件
 * samples：示例代码
 * captures：截图
+* data-parser.jar 最新的，项目中直接用这个jar（当然还得引用依赖的jar）
 
 ##更新日志
 1. 20160925 新增支持txt数据解析（含示例代码及文件）
