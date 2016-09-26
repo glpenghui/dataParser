@@ -1,5 +1,5 @@
 # dataParser
-通用表格数据解析工具，目前支持xls、xlsx、csv、html、xml、txt形式的数据源。
+通用表格数据解析工具，目前支持xls、xlsx、csv、html、xml、txt形式的数据源，也支持InputStream解析，并且支持在较低内存占用下完成超大xlsx文件的解析。
 > 支持jdk1.5及以上版本，jdk1.5需额外导入javax包，否则解析xlsx会报错。
 
 ##代码目录
