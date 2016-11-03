@@ -16,6 +16,6 @@ public class HtmlParser extends AbstractParser{
 
   public HtmlParser(Source source){
     super(new HtmlReader(source),SUPPORT_FILE_SUFFIX);
-    name = "Html Parser";
+    name = "html";
   }
 }

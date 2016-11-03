@@ -16,6 +16,6 @@ public class CsvParser extends AbstractParser{
 
   public CsvParser(Source source){
     super(new CsvReader(source),SUPPORT_FILE_SUFFIX);
-    name = "CSV Parser";
+    name = "csv";
   }
 }

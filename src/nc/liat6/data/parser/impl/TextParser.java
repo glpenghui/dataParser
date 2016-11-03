@@ -22,7 +22,7 @@ public class TextParser extends AbstractParser{
 
   public TextParser(Source source){
     super(new TextReader(source),SUPPORT_FILE_SUFFIX);
-    name = "Text Parser";
+    name = "text";
   }
   
   protected Block parseBlock(List<List<String>> grids,IParserRule rule,BlockType type){

@@ -10,6 +10,13 @@ import java.util.Map;
  *
  */
 public abstract class AbstractParserRule implements IParserRule{
+  /** 默认的解析顺序 */
+  public static final String[] DEFAULT_ORDER = {"xls","xlsx","csv","html","text"};
+
+  public String[] orderBy(){
+    return DEFAULT_ORDER;
+  }
+
   /**
    * 根据列标计算横坐标，A对应0,AA对应26
    * 

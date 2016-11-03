@@ -10,6 +10,12 @@ import java.util.Map;
  */
 public interface IParserRule{
   /**
+   * 获取解析器的先后顺序
+   * @return
+   */
+  String[] orderBy();
+
+  /**
    * 获取解析规则类型
    * 
    * @return 解析规则类型

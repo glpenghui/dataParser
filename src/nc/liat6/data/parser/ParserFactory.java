@@ -70,12 +70,21 @@ public class ParserFactory{
    * @throws ParserNotSupportException 文件不支持解析的异常
    */
   protected IParser getParser(Source source,IParserRule parserRule) throws ParserNotSupportException{
+    List<AbstractParser> ps = new ArrayList<AbstractParser>();
     List<AbstractParser> parsers = new ArrayList<AbstractParser>();
-    parsers.add(new XlsParser(source));
-    parsers.add(new XlsxParser(source));
-    parsers.add(new CsvParser(source));
-    parsers.add(new HtmlParser(source));
-    parsers.add(new TextParser(source));
+    ps.add(new XlsParser(source));
+    ps.add(new XlsxParser(source));
+    ps.add(new CsvParser(source));
+    ps.add(new HtmlParser(source));
+    ps.add(new TextParser(source));
+    for(String name:parserRule.orderBy()){
+      for(AbstractParser parser:ps){
+        if(parser.getName().equalsIgnoreCase(name)){
+          parsers.add(parser);
+          break;
+        }
+      }
+    }
     for(AbstractParser parser:parsers){
       parser.setRule(parserRule);
       int startRow = parser.getStartRow();

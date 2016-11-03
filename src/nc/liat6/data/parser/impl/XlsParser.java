@@ -16,6 +16,6 @@ public class XlsParser extends AbstractParser{
 
   public XlsParser(Source source){
     super(new XlsReader(source),SUPPORT_FILE_SUFFIX);
-    name = "xls Parser";
+    name = "xls";
   }
 }
