@@ -2,7 +2,6 @@ package nc.liat6.data.reader.impl;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -87,11 +86,12 @@ public class XlsReader extends AbstractReader{
                 throw new IllegalArgumentException();
               }
             }catch(Exception e){
-              try{
-                BigDecimal d = new BigDecimal(value+"");
-                v = d.longValue()+"";
-              }catch(Exception ex){
-                v = value+"";
+              v = String.valueOf(value);
+              if(v.endsWith(".0")){
+                try{
+                  Double.parseDouble(v);
+                  v = v.substring(0,v.lastIndexOf("."));
+                }catch(Exception ex){}
               }
             }
             break;

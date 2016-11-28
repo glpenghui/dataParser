@@ -201,7 +201,6 @@ public class Excel2007Reader extends DefaultHandler implements Runnable{
     prefPos = null;
     currentPos = null;
     rowData.clear();
-    ;
     rowQueue.clear();
     t = new Thread(this);
     t.start();
